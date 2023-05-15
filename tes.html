@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <style>
+        #container {
+            width: 48px;
+            height: 48px;
+        }
+
+        #container img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="Photo.png" alt="" />
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+
+            var img = document.getElementById('container').firstChild;
+            img.onload = function () {
+                if (img.height > img.width) {
+                    img.height = '100%';
+                    img.width = 'auto';
+                }
+            };
+
+        }());
+    </script>
+</body>
+
+</html>
