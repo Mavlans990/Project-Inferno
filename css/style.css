@@ -250,6 +250,10 @@ h5 {
   font-size             : 30px;
 }
 
+.card:hover{
+  background-color: #F4F0EC;
+}
+
 .card-about {
   position              : relative;
   display               : flex;
