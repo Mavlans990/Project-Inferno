@@ -293,9 +293,17 @@ h5 {
 }
 
 .card-body {
+  padding-top           : 3rem;
+  padding-bottom        : 3rem;
+  padding-right         : 1rem;
+  padding-left          : 1rem;
   text-align            : center;
 }
 
+.card-body:hover{
+  background-color      : #F4F0EC;
+  border-radius: 12px;
+}
 
 
 
