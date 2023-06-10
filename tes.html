@@ -6,41 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/tes.css" />
-    <!-- <style>
-        * {
-            padding: 0;
-            margin: 100px;
-        }
-
+    <!-- <link rel="stylesheet" href="css/tes.css" /> -->
+    <style>
         body {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            font-family: sans-serif;
         }
 
-
-        .border-kiri {
-            width: 60px;
-            height: 200px;
-            border: solid black;
-            border-width: 5px 0 5px 5px;
-            border-radius: 50px 0 0 50px;
+        .label-before {
+            line-height: 20px;
+            font-size: 12px;
+            top: -10px;
+            background: #fff;
+            padding: 0 6px;
+            left: 9px;
         }
 
-        .border-kanan {
-            width: 60px;
-            height: 200px;
-            border: solid black;
-            border-width: 5px 5px 5px 0;
-            border-radius: 0 50px 50px 0;
+        .container {
+            width: 80%;
+            margin: 30px 10%;
         }
-    </style> -->
+
+        .field {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .field label::before {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 15px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #777;
+            transition: 300ms all;
+        }
+
+        .field input {
+            width: 100%;
+            line-height: 40px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #222;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .field input:focus {
+            outline: 0;
+            border-color: blue;
+        }
+
+        .field input:valid+label::before {
+            line-height: 20px;
+            font-size: 12px;
+            top: -10px;
+            background: #fff;
+            padding: 0 6px;
+            left: 9px;
+            content: attr(data-title);
+        }
+
+        .field input:focus+label::before {
+            line-height: 20px;
+            font-size: 12px;
+            top: -10px;
+            background: #fff;
+            padding: 0 6px;
+            left: 9px;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="card"><img
                 src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
             <div class="info">
@@ -65,7 +107,22 @@
                 <button>Read More</button>
             </div>
         </div>
+    </div> -->
+
+    <div class="container">
+
+        <div class="field">
+            <input type="text" required autocomplete="off" id="username" value="tayfunerbilen">
+            <label for="username" title="Kullanıcı adınızı girin" data-title="Kullanıcı adı"></label>
+        </div>
+
+        <div class="field">
+            <input type="password" required autocomplete="off" id="password">
+            <label for="password" title="Şifrenizi girin" data-title="Şifre"></label>
+        </div>
+
     </div>
+
 </body>
 
 </html>
