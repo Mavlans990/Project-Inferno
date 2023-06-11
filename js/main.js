@@ -32,8 +32,14 @@ var header =
 '                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>'+
 '                    </ul>'+
 '                </li>'+
-'                <li class="nav-item">'+
-'                    <a class="nav-link" href="#">Services</a>'+
+'                <li class="nav-item dropdown-2">'+
+'                    <a class="nav-link dropdown-toggle mt-5" style="line-height: 0px;" href="services.html" role="button"'+
+'                        data-bs-toggle="dropdown-2" aria-expanded="false">'+
+'                        Services'+
+'                    </a>'+
+'                    <ul class="dropdown-content" style="padding-left: 0px;list-style: none;margin-top: 10px;">'+
+'                        <li><a class="dropdown-item" href="services-single.html">Services Single</a></li>'+
+'                    </ul>'+
 '                </li>'+
 '                <li class="nav-item">'+
 '                    <a class="nav-link" href="#">Project</a>'+

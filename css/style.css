@@ -122,7 +122,36 @@ h5 {
   text-align            : left;
 }
 
+.text-shadow{
+  color                 : white;
+  font-size             : 5rem;
+  text-shadow           : 0 3px 10px rgba(123, 107, 107, 0.465);
+}
+
+.number{
+  font-family           : "DM Serif Display", sans-serif;
+  font-size             : 16px;
+  font-weight           : 400;
+  line-height           : 25px;
+  letter-spacing        : 0.01em;
+  text-align            : left;
+  color                 : #CDA274;
+}
 /* Teks */
+
+/* Image */
+
+.icon-services{
+  width                 : 20%;
+  height                : 100%;
+}
+
+.image-1{
+  width                 : 90%;
+  border-radius         : 0 100px 0 210px;
+}
+
+/* Image */
 
 /* Button */
 .button-default {
@@ -269,6 +298,7 @@ h5 {
   border-radius         : 50px;
   text-align            : center;
   font-size             : 30px;
+  
 }
 
 .card:hover{
@@ -291,6 +321,12 @@ h5 {
   border-radius         : 20px;
   /* transition        : transform 0.7s ease-in-out; */
 }
+.card-about .card-body {
+  padding               : 0;
+}
+.card-about .card-body:hover{
+  background-color      : #fff;
+}
 
 .card-body {
   padding-top           : 3rem;
@@ -302,7 +338,7 @@ h5 {
 
 .card-body:hover{
   background-color      : #F4F0EC;
-  border-radius: 12px;
+  border-radius         : 12px;
 }
 
 
@@ -312,6 +348,12 @@ h5 {
   justify-content       : space-between;
   padding-left          : 60px;
   padding-right         : 60px;
+}
+
+.garis-vertikal-2 {
+  rotate                : calc(90deg);
+  width                 : 180px;
+  transform             : translate(40px,50px);
 }
 
 .border-kiri {
