@@ -28,7 +28,6 @@ var header =
 '                    </a>'+
 '                    <ul class="dropdown-content" style="padding-left: 0px;list-style: none;margin-top: 10px;">'+
 '                        <li><a class="dropdown-item" href="about-us.html">About Us</a></li>'+
-'                        <li><a class="dropdown-item" href="projects.html">Our Projects</a></li>'+
 '                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>'+
 '                    </ul>'+
 '                </li>'+
@@ -42,7 +41,7 @@ var header =
 '                    </ul>'+
 '                </li>'+
 '                <li class="nav-item">'+
-'                    <a class="nav-link" href="#">Project</a>'+
+'                    <a class="nav-link" href="projects.html">Project</a>'+
 '                </li>'+
 '                <li class="nav-item">'+
 '                    <a class="nav-link" href="#">Blog</a>'+
